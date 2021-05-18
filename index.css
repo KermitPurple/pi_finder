@@ -1,0 +1,36 @@
+:root{
+    --bg: #324;
+    --fg: #98c;
+}
+
+html, body{
+    width: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    overflow: hidden;
+}
+
+.result-container{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.result-container > *{
+    display: inline-block;
+    font-size: 9em;
+}
+
+.before-result{
+    text-align: right;
+    width: 40%;
+    direction: rtl;
+    unicode-bidi: isolate;
+}
+
+.result{
+    color: red;
+}
+
+.after-result{
+}
