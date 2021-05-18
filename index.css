@@ -1,6 +1,14 @@
 :root{
     --bg: #324;
     --fg: #98c;
+    --result-bg: #435;
+    --result-fg: #edf;
+    --search-bg: #546;
+    --search-fg: #dce;
+}
+
+*{
+    outline: none !important;
 }
 
 html, body{
@@ -11,14 +19,32 @@ html, body{
     overflow: hidden;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.search{
+    appearance: none;
+    border: none;
+    background: var(--search-bg);
+    color: var(--search-fg);
+}
+
 .result-container{
     width: 100%;
     white-space: nowrap;
+    background: var(--result-bg);
 }
 
 .result-container > *{
     display: inline-block;
-    font-size: 9em;
+    font-size: 4em;
 }
 
 .before-result{
@@ -29,8 +55,15 @@ html, body{
 }
 
 .result{
-    color: red;
+    color: var(--result-fg);
 }
 
-.after-result{
+@media only screen and (min-width: 600px){
+    .result-container > *{
+        font-size: 9em;
+    }
+
+    .found-at{
+        font-size: 3em;
+    }
 }
