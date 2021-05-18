@@ -34,6 +34,7 @@ h1{
     border: none;
     background: var(--search-bg);
     color: var(--search-fg);
+    font-size: 2em;
 }
 
 .result-container{
@@ -63,6 +64,7 @@ h1{
         font-size: 9em;
     }
 
+    .search,
     .found-at{
         font-size: 3em;
     }
